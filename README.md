@@ -26,11 +26,28 @@ Install the needed libraries:
 ---
 
 ## Dataset
-The dataset is the San Diego Airbnb listings dataset from Inside Airbnb.
 
-The dataset file included in this project is:
+The dataset used in this project comes from [Inside Airbnb](https://insideairbnb.com/get-the-data/), specifically the detailed listings dataset for San Diego, California.
 
-- listings.csv
+- **Source:** Inside Airbnb
+- **Location:** San Diego, California
+- **Original file:** `listings.csv.gz`
+- **Extracted file:** `listings.csv`
+- **Prediction target:** Airbnb listing price
+
+We selected the detailed listings dataset because it contains information about property characteristics, location, room type, availability, reviews, and pricing.
+
+Rather than combining multiple datasets, we focused on selecting the most relevant features from the detailed listings data. We removed unnecessary columns and cleaned the remaining data before training our machine learning models.
+
+### Download Instructions
+
+1. Visit [Inside Airbnb – Get the Data](https://insideairbnb.com/get-the-data/).
+2. Find San Diego, California.
+3. Download the detailed listings file (`listings.csv.gz`).
+4. Extract the file and save it as `listings.csv`.
+5. Place `listings.csv` in the same folder as `airbnb_san_diego.ipynb`.
+
+**Note:** Inside Airbnb updates its datasets periodically, so results may differ when using a newer version of the data.
 
 ---
 
